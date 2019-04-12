@@ -9,25 +9,25 @@ const bitmap = [
 
 console.table(bitmap);
 const length = bitmap.length;
-let x = 0, y = 0;
+let row = 0, column = 0;
 var stillMore = true;
 for(let holder = 0; holder < length && stillMore; holder++) {
     for(let incrementer = 0; incrementer < bitmap.length; incrementer++) {
         if(holder === 0){
-            x = incrementer;
-            y = holder;
+            row = incrementer;
+            column = holder;
         } else if(holder === 1) {
-            x = holder - 1;
-            y = incrementer;
+            row = holder - 1;
+            column = incrementer;
         } else if(holder === 2) {
-            x = incrementer;
-            y = length - 1;
+            row = incrementer;
+            column = length - 1;
         } else if (holder === 3) {
-            x = length - 1;
-            y = incrementer;
+            row = length - 1;
+            column = incrementer;
             stillMore = false;
         }
-        bitmap[x][y] = 0;
+        bitmap[row][column] = 0;
     }
 }
 
