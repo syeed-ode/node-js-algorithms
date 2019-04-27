@@ -15,7 +15,7 @@ console.log(obj);
 
 //  Notice that we don't need to specify the keyword
 // function.
-module.exports = {
+revealingModulePattern.exports = {
     square (x) {
         return x * x;
     },
@@ -24,7 +24,7 @@ module.exports = {
     }
 };
 
-console.log(module.exports.cube(27))
+console.log(revealingModulePattern.exports.cube(27))
 
 const namespace = '-webkit-';
 const style = {
