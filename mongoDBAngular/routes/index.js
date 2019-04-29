@@ -1,4 +1,4 @@
-module.exports = function(app) {
+revealingModulePattern.exports = function(app) {
 	var route = {};
 
 	// index.html

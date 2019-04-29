@@ -1,4 +1,4 @@
-module.exports = function (app) {
+revealingModulePattern.exports = function (app) {
   // Module dependencies.
   var db = require('../config/db'),
     mongojs = require('mongojs'),

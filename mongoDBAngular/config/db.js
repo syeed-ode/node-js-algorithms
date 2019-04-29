@@ -1,3 +1,4 @@
+// Taken from https://www.amazon.in/Node-Effective-Possible-Functions-Notifications-ebook/dp/B00XTJFTAK
 'use strict';
 var mongojs = require('mongojs');
 
@@ -25,4 +26,4 @@ db.posts.findOne(function (err, res) {
   }
 });
 
-module.exports = db;
+revealingModulePattern.exports = db;

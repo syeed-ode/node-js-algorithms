@@ -9,7 +9,7 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     errorhandler = require('errorhandler');
 
-var app = module.exports = exports.app = express();
+var app = revealingModulePattern.exports = exports.app = express();
 
 app.locals.siteName = "mongoDBAngular";
 
